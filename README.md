@@ -11,3 +11,8 @@
 ### 3. About Us : menu ini terdapat kalimat yang menjelaskan secara singkat tentang website.
 ### 4. $ (icon dollar) : mengapa icon dollar, karena di menu ini user bisa mendapatkan JR Play mode Premium dengan mengisikan form dan memilih berlangganan.
 ### 5. Sign Up : menu ini tersedia untuk user yang ingin mendaftarkan akun baru agar bisa login di menu sign in
+### Tampilan local storage :
+![Screenshot (10)](https://user-images.githubusercontent.com/120031668/227726896-f6a5bd20-18a7-4146-ab20-d7f055ccb8dc.png)
+### Tampilan session storage
+![Screenshot (13)](https://user-images.githubusercontent.com/120031668/227726899-4130522e-7a06-4de6-a2b6-c067fd452e15.png)
+
