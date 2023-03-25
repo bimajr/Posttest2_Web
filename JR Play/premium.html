@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JR Play | Premium</title>
+    <!-- Fonts yang saya gunakan adalah poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>JR</span> Play</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About Us</a>
+        <a href="register.html">Sign Up</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="premium.html" id="premium">
+          <i data-feather="dollar-sign"></i>
+        </a>
+        <a href="#" id="menu">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Premium Section Start -->
+    <section id="premium" class="premium">
+      <div id="containerform" class="containerform">
+      <h2><span>Formulir</span> Premium</h1>
+          <div id="form" class="form"><br>
+              <form>
+                <fieldset>
+                    <h3>Silahkan isi form berikut :</h3>
+                <div>
+                <br><label for="nama">Nama:</label><br>
+                <input type="text" placeholder="Masukkan Nama"/>
+                </div>
+                <div>
+                  <label for="email">Email:</label><br>
+                  <input type="email" placeholder="Masukkan Email"/>
+                  </div>
+                <div>
+                <br>Jenis Kelamin : <br>
+                <input type="radio" name="Jenis Kelamin" value="Laki-laki"/> Laki-laki <br>
+                <input type="radio" name="Jenis Kelamin" value="Perempuan"/> Perempuan
+                </div>
+                <div>
+                <br>Apa Genre musik favoritmu? :
+                <br><input type="checkbox" value="Pop">
+                <label for="Pop">Pop</label></br>
+                <input type="checkbox" value="Rock">
+                <label for="Rock">Rock</label></br>
+                <input type="checkbox" value="Jazz">
+                <label for="Jazz">Jazz</label></br>
+                <input type="checkbox" value="Classic">
+                <label for="Classic">Classic</label></br>
+                </div>
+                <div>
+                <br>Paket Berlangganan Premium :
+                <select>
+                <option value="1 Bulan - Rp.59.000">1 Bulan - Rp.59.000</option>
+                <option value="3 Bulan - Rp.109.000">3 Bulan - Rp.109.000</option>
+                <option value="5 Bulan - Rp.209.000">5 Bulan - Rp.209.000</option>
+                </select>
+                </div>
+                <div>
+                <br>Tanggapanmu tentang website JR Play :</br>
+                <textarea
+                    rows="4"
+                    cols="50"
+                    placeholder="Tulis tanggapanmu di sini ..." 
+                    style="color: black;">
+                </textarea>
+                </div>
+                <div>
+                  <button type="submit">Kirim</button>
+                </div>
+                  </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Premium Section End -->
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;1945 JR Play. designed by
+          <span>Arya Bhima Andika</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/premium.js"></script>
+    
+  </body>
+</html>

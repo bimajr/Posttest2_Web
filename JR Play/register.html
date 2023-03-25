@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>JR Play | Sign In</title>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>JR</span> Play</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About Us</a>
+        <a href="register.html">Sign Up</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="premium.html" id="premium">
+          <i data-feather="dollar-sign"></i>
+        </a>
+        <a href="#" id="menu">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <section>
+      <div class="login-card-container">
+        <div class="login-card">
+          <div class="login-card-header">
+            <h1>Register</h1>
+            <div>Silahkan daftar akun baru untuk mendengarkan musik</div>
+          </div>
+          <form class="login-card-form">
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded"><i data-feather="user"></i></span>
+                <input
+                  type="text"
+                  placeholder="Masukkan Nama"
+                  id="nama"
+                  autofocus
+                  required
+                />
+              </div>
+            <div class="form-item">
+              <span class="form-item-icon material-symbols-rounded">mail</span>
+              <input
+                type="email"
+                placeholder="Masukkan Email"
+                id="email"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form-item">
+              <span class="form-item-icon material-symbols-rounded">lock</span>
+              <input
+                type="password"
+                placeholder="Masukkan Password"
+                id="pass"
+                required
+              />
+            </div>
+            <div class="form-item-other">
+              <div class="checkbox">
+                <input type="checkbox" id="rememberMeCheckbox" checked />
+                <label for="rememberMeCheckbox">Remember Me</label>
+              </div>
+              <a href="#">Lupa password anda ?</a>
+            </div>
+            <button type="submit">Register</button>
+          </form>
+          <div class="login-card-footer">
+            Login akun yang sudah ada? <a href="login.html">Login Sekarang.</a>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;1945 JR Play. designed by
+          <span>Arya Bhima Andika</span>
+        </p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

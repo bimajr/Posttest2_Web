@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --primary: #bc0e4c;
+  --bg: #101010;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #ffff;
+  overflow-x: hidden;
+}
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(55, 55, 55);
+  border-bottom: 2px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+#menu {
+  display: none;
+}
+/* Login Card */
+.login-card-container {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #101010, var(--primary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 20px;
+  position: relative;
+  top: 45px;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(-6deg);
+  border-radius: 10px;
+  z-index: -1;
+}
+/* ---------- */
+
+/* Login Card Logo */
+.login-card-logo {
+  margin-bottom: 2rem;
+}
+
+.login-card-logo img {
+  width: 60px;
+}
+/* ---------- */
+
+/* Login Card Standard */
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #101010;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+/* ---------- */
+
+/* Login Card Header */
+.login-card-header {
+  margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.login-card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}
+/* ---------- */
+
+/* Login Card Form */
+.login-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+  position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+  position: absolute;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  opacity: 0.4;
+}
+
+.login-card-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.login-card-form .form-item-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(1rem * 0.8);
+  margin-bottom: 0.5rem;
+}
+/* ---------- */
+
+/* Login Card Footer */
+.login-card-footer {
+  margin-top: 1.5rem;
+  font-size: calc(1rem * 0.8);
+}
+/* ---------- */
+
+/* Login Card Form Elements */
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: background 0.5s;
+}
+
+.login-card input:focus {
+  background: white;
+}
+
+.login-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.login-card button {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+}
+
+.login-card button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+/* ---------- */
+
+.login-card-social-btns a:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+/* ---------- */
+.footer-bottom {
+  background: var(--primary);
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .login-card {
+    width: 280px;
+    padding: 2rem;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
